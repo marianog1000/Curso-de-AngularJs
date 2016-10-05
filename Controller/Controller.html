@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Controller</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-app="app">
+	<div ng-controller="simpleController as vm">
+		<strong>First Name:</strong>{{vm.firstName}}<br />
+		<strong>Last Name:</strong><span ng-bind="vm.lastName"></span><br />
+		<strong>Full Name:</strong>{{vm.getFullName()}}<br />
+		<br />
+		<label>Set The First Name:<input type="text" ng-model="vm.firstName" /></label><br />
+		<label>Set The Last Name:<input type="text" ng-model="vm.lastName" /></label>	
+	</div>
+	
+</body>
+</html>

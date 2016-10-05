@@ -1,0 +1,18 @@
+﻿label
+{
+	display: inline-block;
+	width: 100px;
+	vertical-align:middle;	
+}
+
+input
+{
+	display:inline-block;
+	vertical-align:middle;	
+}
+
+input.ng-invalid
+{
+	border: solid red 2px;
+	background-color:#ffcce5;
+}

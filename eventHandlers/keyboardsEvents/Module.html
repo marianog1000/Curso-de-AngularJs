@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>KeyBoard Events</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-app="mainModule">
+	<div ng-controller="mainController">
+		<label>Type Something:
+			<input type="text"	
+				ng-keydown="onKeyDown($event)"
+				ng-keyup="onKeyUp($event)"
+				ng-keypress="onKeyPress($event)" />		
+		</label><br />
+		<strong>Key Down Result: </strong>{{onKeyDownResult}}<br />
+		<strong>Key Up Result: </strong>{{onKeyUpResult}}<br />
+		<strong>Key Press Result: </strong>{{onKeyPressResult}}<br />
+		
+		
+	
+		
+	</div>
+	
+</body>
+</html>

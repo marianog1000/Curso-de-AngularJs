@@ -1,0 +1,17 @@
+﻿label
+{
+	width:250px;
+	display:inline-block;
+	vertical-align:middle;	
+}
+
+input
+{
+	vertical-align:middle;	
+}
+
+.valueItems
+{
+	display:inline-block;
+	vertical-align:middle;	
+}

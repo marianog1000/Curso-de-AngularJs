@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Reset</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="script.js" type="text/javascript"></script>
+	<link href="Stylesheet1.css" rel="stylesheet" type="text/css" />    
+	
+</head>
+<body ng-app="mainModule">
+	<div ng-controller="mainController">
+		<form name="personForm" novalidate>
+			<label for="firstNameEdit">First Name:</label>
+			<input id="firstNameEdit" type="text" name="firstName" ng-model="person.firstName" required /><br />
+			<label for="lastName">Last Name:</label>
+			<input id="lastNameEdit" type="text" name="lastName" ng-model="person.lastName" required /><br />
+			<br />
+			
+			<button type="button" ng-click="resetForm()" ng-disabled="!isPersonChanged()">Reset</button>
+			
+		</form>
+		<br />
+		<strong>personForm.$pristine = </strong>{{personForm.$pristine}}<br />No ha sido Modificado
+		<strong>personForm.$valid = </strong>{{personForm.$valid}}<br />
+	</div>
+</body>
+</html>
+

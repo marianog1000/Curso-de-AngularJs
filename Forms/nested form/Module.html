@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Forms</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="script.js" type="text/javascript"></script>
+	<link href="Stylesheet1.css" rel="stylesheet" type="text/css" />    
+	
+</head>
+<body ng-app="mainModule">
+	<div ng-controller="mainController">
+		<form name="personForm" novalidate>
+			<label for="firstNameEdit">First Name:</label>
+			<input id="firstNameEdit" type="text" name="firstName" ng-model="person.firstName" required /><br />
+			<label for="lastNameEdit">Last Name:</label>
+			<input id="lastNameEdit" type="text" name="lastName" ng-model="person.lastName" required /><br />
+			<ng-include src="'addressForm.html'"></ng-include>
+		</form>
+		<br />
+		
+		<strong><label for="userDebugText">Person:</label></strong><br />
+		<textarea id="userDebugText">{{person | json}}</textarea><br />
+		<br />
+		<strong>Form validity:</strong><br />
+		<ul>
+			<li ng-class="validarCss(personForm)"><strong>personForm.$valid = </strong>{{personForm.$valid}}</li>
+			<li ng-class="validarCss(personForm.addressForm)"><strong>personForm.addressForm.$valid = </strong>{{personForm.addressForm.$valid}}</li>
+			<li ng-class="validarCss(personForm.firstName)"><strong>personForm.firstName.$valid = </strong>{{personForm.firstName.$valid}}</li>
+			<li ng-class="validarCss(personForm.lastName)"><strong>personForm.lastName.$valid = </strong>{{personForm.lastName.$valid}}</li>
+			<li ng-class="validarCss(personForm.addressForm.zip)"><strong>personForm.addressForm.zip.$valid = </strong>{{personForm.addressForm.zip.$valid}}</li>
+		</ul>	
+	</div>	
+</body>
+</html>
+

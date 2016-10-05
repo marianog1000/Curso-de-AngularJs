@@ -1,0 +1,23 @@
+﻿.logTextAreaSmall
+{
+	width: 400px;
+	height: 80px;	
+}
+
+.logTextAreaMedium
+{
+	width:400px;
+	height: 150px;	
+}
+
+.logTextAreaBig
+{
+	width:400px;
+	height: 220px;	
+}
+
+.logTextAreaTall
+{
+	width:400px;
+	height:330px;
+}

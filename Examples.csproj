@@ -1,0 +1,202 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C083852A-4838-4CF4-84CB-38D080E9F4CC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Examples</RootNamespace>
+    <AssemblyName>Examples</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Collections\array filters\Module.html" />
+    <Content Include="Collections\array filters\script.js" />
+    <Content Include="Collections\formatting filters\Module.html" />
+    <Content Include="Collections\formatting filters\script.js" />
+    <Content Include="Collections\Repeater\Module.html" />
+    <Content Include="Collections\Repeater\script.js" />
+    <Content Include="Collections\Repeater\Stylesheet1.css" />
+    <Content Include="Conditional Display\include\fragment1.html" />
+    <Content Include="Conditional Display\include\fragment2.html" />
+    <Content Include="Conditional Display\include\Module.html" />
+    <Content Include="Conditional Display\if\Module.html" />
+    <Content Include="Conditional Display\Switch\Module.html" />
+    <Content Include="Conditional Display\Show and Hide\Module.html" />
+    <Content Include="Controller\Controller.html" />
+    <Content Include="Controller\script.js" />
+    <Content Include="Custom Directives\Compile and Link Functions\Module.html" />
+    <Content Include="Custom Directives\Compile and Link Functions\script.js" />
+    <Content Include="Custom Directives\Compile and Link Functions\Stylesheet1.css" />
+    <Content Include="Custom Directives\Controller\Module.html" />
+    <Content Include="Custom Directives\Controller\script.js" />
+    <Content Include="Custom Directives\Transclusion\Module.html" />
+    <Content Include="Custom Directives\Transclusion\script.js" />
+    <Content Include="Custom Directives\Priority\Module.html" />
+    <Content Include="Custom Directives\Priority\script.js" />
+    <Content Include="Custom Directives\Restrict\Module.html" />
+    <Content Include="Custom Directives\Restrict\script.js" />
+    <Content Include="Custom Directives\Scope\Module.html" />
+    <Content Include="Custom Directives\Scope\script.js" />
+    <Content Include="Custom Directives\Replace\Module.html" />
+    <Content Include="Custom Directives\Replace\script.js" />
+    <Content Include="Custom Directives\Templates\nghTemplateUrlDirBody.html" />
+    <Content Include="Custom Directives\Templates\Module.html" />
+    <Content Include="Custom Directives\Templates\script.js" />
+    <Content Include="eventHandlers\ChangeEvents\Module.html" />
+    <Content Include="eventHandlers\ChangeEvents\script.js" />
+    <Content Include="eventHandlers\keyboardsEvents\Module.html" />
+    <Content Include="eventHandlers\keyboardsEvents\script.js" />
+    <Content Include="eventHandlers\mouseEvents\Module.html" />
+    <Content Include="eventHandlers\mouseEvents\script.js" />
+    <Content Include="Forms\check input\Module.html" />
+    <Content Include="Forms\check input\Stylesheet1.css" />
+    <Content Include="Forms\form reset\Module.html" />
+    <Content Include="Forms\form reset\script.js" />
+    <Content Include="Forms\form reset\Stylesheet1.css" />
+    <Content Include="Forms\form submission\Module.html" />
+    <Content Include="Forms\form submission\script.js" />
+    <Content Include="Forms\form submission\Stylesheet1.css" />
+    <Content Include="Forms\nested form\addressForm.html" />
+    <Content Include="Forms\nested form\Module.html" />
+    <Content Include="Forms\nested form\script.js" />
+    <Content Include="Forms\nested form\Stylesheet1.css" />
+    <Content Include="Forms\Validation\Module.html" />
+    <Content Include="Forms\Validation\script.js" />
+    <Content Include="Forms\Validation\Stylesheet1.css" />
+    <Content Include="Forms\Tracking Changes\Module.html" />
+    <Content Include="Forms\Tracking Changes\script.js" />
+    <Content Include="Forms\Tracking Changes\Stylesheet1.css" />
+    <Content Include="Forms\select\Module.html" />
+    <Content Include="Forms\select\script.js" />
+    <Content Include="Forms\select\Stylesheet1.css" />
+    <Content Include="Forms\radio button input\Module.html" />
+    <Content Include="Forms\radio button input\Stylesheet1.css" />
+    <Content Include="Forms\text input\Module.html" />
+    <Content Include="Forms\text input\Stylesheet1.css" />
+    <None Include="Localization\Switching Locale on the Fly\server.php" />
+    <None Include="Localization\Switching Locale on the Fly\locale\en-us.php" />
+    <None Include="Localization\Switching Locale on the Fly\index.php" />
+    <None Include="Localization\Switching Locale on the Fly\locale\it-it.php" />
+    <Content Include="Localization\Switching Locale on the Fly\script.js" />
+    <Content Include="Localization\Simple Localization\en_us\index.html" />
+    <Content Include="Localization\Simple Localization\it_it\index.html" />
+    <Content Include="Localization\Simple Localization\index.html" />
+    <Content Include="Localization\Simple Localization\script.js" />
+    <Content Include="Module\config\Module.html" />
+    <Content Include="Module\config\script.js" />
+    <Content Include="Module\Dependencies\Module.html" />
+    <Content Include="Module\Dependencies\script.js" />
+    <Content Include="Module\Registering a factory\Module.html" />
+    <Content Include="Module\Registering a factory\script.js" />
+    <Content Include="Module\Module2\Module2.html" />
+    <Content Include="Module\Module2\script.js" />
+    <Content Include="Module\Module1\Module.html" />
+    <Content Include="Module\Module1\script.js" />
+    <Content Include="Module\Provider\Module.html" />
+    <Content Include="Module\Provider\script.js" />
+    <Content Include="Module\Registering a service\Module.html" />
+    <Content Include="Module\Registering a service\script.js" />
+    <Content Include="NestedControllers\NestedControllers.html" />
+    <Content Include="NestedControllers\script.js" />
+    <Content Include="Multiple Controllers\MultipleControllers.html" />
+    <Content Include="Multiple Controllers\script.js" />
+    <Content Include="Server Calls\http service\index.html" />
+    <Content Include="Server Calls\http service\script.js" />
+    <Content Include="Server Calls\q service\index.html" />
+    <Content Include="Server Calls\q service\script.js" />
+    <Content Include="TwoWayDataBinding.html" />
+    <Content Include="Index.aspx" />
+    <Content Include="OneWayDataBinding.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms\form submission\server.php" />
+    <None Include="Server Calls\http service\server.php" />
+    <None Include="Server Calls\q service\server.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52411</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

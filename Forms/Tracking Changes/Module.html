@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tracking Changes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="script.js" type="text/javascript"></script>
+	<link href="Stylesheet1.css" rel="stylesheet" type="text/css" />    
+	
+</head>
+<body ng-app="mainModule">
+	<div ng-controller="mainController">
+		<h3>1. Tracking changes on single elements.</h3>
+		<label>Text: <input type="text" ng-model="textValue" ng-change="onTextChange()"</label><br />
+		<strong>Value:</strong> {{textValue}}
+		<br /><br />
+		<strong>Changed:</strong>{{isTextChanged}} ({{textChangesCounter}} times)<br />
+		<br /><br />
+		
+		<label>E-mail<input type="email" ng-model="emailValue" ng-change="onEmailChange()" /></label><br />
+		<strong>Value:</strong>{{emailValue}}
+		<br /><br />
+		<strong>Changed:</strong> {{isEmailChanged}} ({{emailChangesCounter}} times)
+ 		<br /><br />
+ 		
+ 		<h3>2. Tracking changes in a form</h3>
+ 		<form name="testForm">
+ 			<label>Text:<input type="text" name="formText" ng-model="formTextValue" /></label>
+ 			<strong>State:</strong> {{getItemState(testForm.formText)}}<br />
+ 			<label>E-mail:<input type="email" name="formEmail" ng-model="formEmailValue" /></label>
+ 			<strong>State:</strong>{{getItemState(testForm.formEmail)}}<br />
+ 			<br />
+ 			<strong>Form State:</strong>{{getItemState(testForm)}} 		
+ 		</form>		
+	</div>
+</body>
+</html>
+

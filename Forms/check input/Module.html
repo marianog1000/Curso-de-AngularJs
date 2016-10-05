@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox Input</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<link href="Stylesheet1.css" rel="stylesheet" type="text/css" />    
+</head>
+<body ng-app>
+	<div>
+		<label for="basicCheck">Basic Checkbox:</label>
+		<input id="basicCheck" type="checkbox" ng-model="basicCheckValue" />
+		<span class="valueItems"><strong>Value:</strong>{{basicCheckValue}}</span><br />
+		
+		<label for="customValCheck">Checkbox with custom values:</label>
+		<input id="customValCheck" type="checkbox" ng-model="checkValue"
+			ng-true-value="'right'" ng-false-value="'wrong'" />
+		<span class="valueItems"><strong>Value:</strong>{{checkValue}}</span>
+	</div>
+</body>
+</html>
+

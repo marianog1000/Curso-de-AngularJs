@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Show and Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-app ng-init="inputVar='test'">
+	<label>Type Something: <input type="text" ng-model="inputVar" /> </label>
+	<br />
+	<h3>1. Simple Include</h3>
+	<div ng-include="'fragment1.html'"></div>
+	<br />
+	<h3>2. Conditional Include</h3>
+	<label>Include Fragment 2: <input type="checkbox" ng-model="includeFrag2" /></label>
+	<div ng-include="includeFrag2 ? 'fragment2.html' : 'fragment1.html'"></div>
+	
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+﻿table
+{
+	border-collapse:collapse;
+}
+
+table, th, td
+{
+	border: 1px solid #e1e1e1;	
+}
+
+th, td
+{
+	padding:6px;	
+}
+
+thead
+{
+	background-color:yellow;
+	color:Green;
+}
+
+strong
+{
+	color:Blue;	
+}

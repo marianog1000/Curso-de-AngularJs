@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Radio Button Input</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<link href="Stylesheet1.css" rel="stylesheet" type="text/css" />    
+</head>
+<body ng-app>
+	<div>
+		<label for="redRadio" style="width:50px;">Red:</label>
+		<input id="redRadio" type="radio" ng-model="colorValue" value="red"  /><br />
+		
+		<label for="green" style="width:50px;">Green:</label>
+		<input id="greenRadio" type="radio" ng-model="colorValue" value="green" /><br />
+		
+		<label for="blue" style="width:50px;">Blue:</label>
+		<input id="blueRadio" type="radio" ng-model="colorValue" value="blue" /><br />
+		<br />
+		<strong>Selected Color:</strong>{{colorValue}}<br />
+		<br />
+		
+		<label for="pearRadio" style="width:50px;">Pear:</label>
+		<input id="pearRadio" type="radio" ng-model="fruitValue" value="pear" /><br />
+		
+		<label for="peachRadio" style="width:50px;">Peach:</label>
+		<input id="peachRadio" type="radio" ng-model="fruitValue" value="peach" /><br />
+		
+		<label for="apricotRadio" style="width:50px;">Apricot:</label>
+		<input id="apricotRadio" type="radio" ng-model="fruitValue" value="apricot" /><br />
+		<br />
+		<strong>Selected Fruit:</strong>{{fruitValue}}
+	</div>
+</body>
+</html>
+

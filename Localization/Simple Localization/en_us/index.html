@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Simple Localization</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.5.8/angular-locale_en-us.js"></script>
+    <script src="../script.js"></script>
+</head>
+<body ng-app="mainModule">
+	<div ng-controller="mainController">
+		<h3>English (USA)</h3>
+		<strong>Current Locale ID: </strong>{{localeId}}<br />
+		<strong>The Date is: </strong>{{currentDate | date: "fullDate"}}<br />
+		<strong>This is a number:</strong> {{1234.56 | number}}<br />
+		<br />
+		<a href="../index.html">BACK</a>
+	</div>
+</body>
+</html>

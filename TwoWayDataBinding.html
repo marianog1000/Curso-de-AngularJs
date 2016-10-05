@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Way Data Binding</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+</head>
+<body ng-app ng-init="firstName = 'John'; lastName= 'Doe';">
+	<strong>First Name:</strong>{{firstName}}<br />
+	<strong>Last Name:</strong><span ng-bind="lastName"></span><br />
+	<br />
+	<label>Set The First Name:<input type="text" ng-model="firstName" /></label><br />
+	<label>Set The Last Name:<input type="text" ng-model="lastName" /></label>	
+</body>
+</html>

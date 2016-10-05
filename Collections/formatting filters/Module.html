@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Formatting Filters</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="script.js"></script>	
+</head>
+<body ng-app="mainModule">
+	<div ng-controller="mainController">
+		<h3>1. Simple Filter</h3>
+		<strong>Original Data:</strong>{{stringData}}<br />
+		<strong>Filtered Data:</strong>{{stringData | uppercase}}<br />
+		<br />
+		<h3>2. Chained Filters:</h3>
+		<strong>Original Data:</strong>{{stringData}}<br />
+		<strong>Filtered Data:</strong>{{stringData | lowercase | limitTo:7}}<br />
+		<br />
+		<h3>3. Filter in JavaScript</h3>
+		<strong>Original Data:</strong>{{dateData}}<br />
+		<strong>Filtered Data(HTML):</strong>{{dateData | date: "dd MM yyyy"}}<br />
+		<!--<strong>Filtered Data(javascript - alternative 1):</strong>{{formatDate1(dateData,"dd MMM yyyy"}}<br />
+		<strong>Filtered Data(javascript - alternative 2):</strong>{{formatDate2(dateData,"dd MMM yyyy"}}<br />
+		<!--<br />-->
+		<h3>4. Custom Filter</h3>
+		<label><strong>Original Data:</strong><input type="text" ng-model="numberData"/></label><br />
+		<strong>Filtered Data (default):</strong>{{numberData | customCurrency}}<br />
+		<strong>Filtered Data (with parameters):</strong>{{numberData | customCurrency:"&euro;":",":".":2}}<br />		
+	</div>
+</body>
+</html>
+
+

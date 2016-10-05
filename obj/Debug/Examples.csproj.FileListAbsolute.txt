@@ -1,0 +1,10 @@
+D:\mariano\TUTORIALES\angular\AngularJsHub\Examples\Examples\bin\Examples.dll
+D:\mariano\TUTORIALES\angular\AngularJsHub\Examples\Examples\bin\Examples.pdb
+D:\mariano\TUTORIALES\angular\AngularJsHub\Examples\Examples\obj\Debug\ResolveAssemblyReference.cache
+D:\mariano\TUTORIALES\angular\AngularJsHub\Examples\Examples\obj\Debug\Examples.dll
+D:\mariano\TUTORIALES\angular\AngularJsHub\Examples\Examples\obj\Debug\Examples.pdb
+D:\mariano\TUTORIALES\AngularJS\AngularJsHub\Examples\Examples\bin\Examples.dll
+D:\mariano\TUTORIALES\AngularJS\AngularJsHub\Examples\Examples\bin\Examples.pdb
+D:\mariano\TUTORIALES\AngularJS\AngularJsHub\Examples\Examples\obj\Debug\ResolveAssemblyReference.cache
+D:\mariano\TUTORIALES\AngularJS\AngularJsHub\Examples\Examples\obj\Debug\Examples.dll
+D:\mariano\TUTORIALES\AngularJS\AngularJsHub\Examples\Examples\obj\Debug\Examples.pdb

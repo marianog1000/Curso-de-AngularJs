@@ -1,0 +1,14 @@
+﻿.ng-pristine
+{
+	border: solid green 3px;	
+}
+
+.ng-dirty
+{
+	border: solid orange 3px;	
+}
+
+form
+{
+	padding: 10px;	
+}

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Controllers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-app="app">
+	<div ng-controller="firstController as fs">
+		<h2>Model managed by the first controller</h2>
+		<strong>First Name:</strong>{{fs.firstName}}<br />
+		<strong>Last Name:</strong><span ng-bind="fs.lastName"></span><br />
+		<strong>Full Name:</strong>{{fs.getFullName()}}<br />
+		<br />
+		<label>Set The First Name:<input type="text" ng-model="fs.firstName" /></label><br />
+		<label>Set The Last Name:<input type="text" ng-model="fs.lastName" /></label>	
+	</div>
+	<div ng-controller="secondController as sd">
+		<h2>Model managed by the Second controller</h2>
+		<strong>First Name:</strong>{{sd.firstName}}<br />
+		<strong>Middle Name:</strong>{{sd.middleName}}<br />
+		<strong>Last Name:</strong><span ng-bind="sd.lastName"></span><br />
+		<strong>Full Name:</strong>{{sd.getFullName()}}<br />
+		<br />
+		<label>Set The First Name:<input type="text" ng-model="sd.firstName" /></label><br />
+		<label>Set The Middle Name:<input type="text" ng-model="sd.middleName" /></label><br />
+		<label>Set The Last Name:<input type="text" ng-model="sd.lastName" /></label>	
+	</div>	
+</body>
+</html>
